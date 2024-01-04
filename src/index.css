@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: #fff;
+  background-image: url("assets/images/gifbg.gif");
+  background-size: cover;
+  background-position: center;
+
+}
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
+
+.Brightning-btn:hover,.Scroll-btn:hover {
+  color: #ffee10;
+  text-shadow: 3px -1px 27px yellow,
+    3px -1px 27px yellow,
+    3px -1px 27px yellow;
+  cursor: pointer;
+}
+
+.services-tagline {
+  font-style: italic;
+  color: #666;
+  border: 1px solid #ccc;
+  color: #fff;
+  background-color: #ffffff21;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.service-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(163, 191, 20, 0.49);
+  border-radius: 8px;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+}
+
+.service-card:hover {
+  transform: scale(1.09);
+  border: 3px solid rgb(2, 59, 247);
+}
+
+.service-card-h1 {
+  color: black;
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bolder;
+}
+
+.service-card-p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+.service-card-ul {
+  list-style-type: none;
+}
+
+.service-card-li {
+  margin-bottom: 5px;
+  font-size: 10px;
+  color: #000;
+  font-weight: bolder;
+}
+
+.end {
+  border-top: 1px solid #fff;
+}
